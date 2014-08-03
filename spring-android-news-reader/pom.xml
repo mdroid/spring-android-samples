@@ -7,8 +7,12 @@
 	<version>0.1.0</version>
 	<packaging>apk</packaging>
 	<name>spring-android-news-reader</name>
+<<<<<<< HEAD
 	<url>http://spring.io/projects/spring-android</url>
 	<inceptionYear>2010</inceptionYear>
+=======
+	<url>http://www.springsource.org</url>
+>>>>>>> parent of 55aafd1... Updated repository urls
 	<organization>
 		<name>Spring</name>
 		<url>http://spring.io</url>
@@ -51,6 +55,7 @@
 		</dependency>
 	</dependencies>
 
+<<<<<<< HEAD
 	<repositories>
 		<repository>
 			<id>android-rome-feed-reader-repository</id>
@@ -64,6 +69,8 @@
 		</repository>
 	</repositories>
 
+=======
+>>>>>>> parent of 55aafd1... Updated repository urls
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<sourceDirectory>src</sourceDirectory>
@@ -100,5 +107,44 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<!-- For developing with Android ROME Feed Reader -->
+		<repository>
+			<id>android-rome-feed-reader-repository</id>
+			<name>Android ROME Feed Reader Repository</name>
+			<url>https://android-rome-feed-reader.googlecode.com/svn/maven2/releases</url>
+		</repository>
+		<!-- For testing against latest Spring snapshots -->
+		<repository>
+			<id>springsource-snapshot</id>
+			<name>SpringSource Snapshot Repository</name>
+			<url>http://repo.springframework.org/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<!-- For developing against latest Spring milestones -->
+		<repository>
+			<id>springsource-milestone</id>
+			<name>SpringSource Milestone Repository</name>
+			<url>http://repo.springframework.org/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!-- For developing against latest Spring releases -->
+		<repository>
+			<id>springsource-repo</id>
+			<name>SpringSpring Repository</name>
+			<url>http://repo.springframework.org/release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 </project>

@@ -2,14 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
 	<groupId>org.springframework.android</groupId>
 	<artifactId>spring-android-basic-auth-server</artifactId>
 	<name>spring-android-basic-auth-server</name>
 	<version>0.1.0</version>
 	<packaging>war</packaging>
+<<<<<<< HEAD
 	<url>http://spring.io/projects/spring-android</url>
 	<inceptionYear>2010</inceptionYear>
+=======
+	<url>http://www.springsource.org</url>
+>>>>>>> parent of 55aafd1... Updated repository urls
 	<organization>
 		<name>Spring</name>
 		<url>http://spring.io</url>
@@ -149,9 +152,39 @@
 
 	<repositories>
 		<repository>
+<<<<<<< HEAD
 			<id>spring-repo</id>
 			<name>Spring Repository</name>
 			<url>http://repo.spring.io/libs-release</url>
+=======
+			<id>org.springframework.maven.snapshot</id>
+			<name>Spring Maven Snapshot Repository</name>
+			<url>http://repo.springframework.org/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<!-- For developing against latest Spring milestones -->
+		<repository>
+			<id>org.springframework.maven.milestone</id>
+			<name>Spring Maven Milestone Repository</name>
+			<url>http://repo.springframework.org/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!-- For Spring releases -->
+		<repository>
+			<id>org.springframework.maven.release</id>
+			<name>Spring Maven Release Repository</name>
+			<url>http://repo.springframework.org/release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+>>>>>>> parent of 55aafd1... Updated repository urls
 		</repository>
 	</repositories>
 
